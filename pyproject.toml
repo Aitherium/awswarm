@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awswarm"
+version = "0.1.0"
+description = "Sub-layer fragment placement for GPUs too small to hold one full transformer layer -- capacity-proportional splitting, column/row-parallel execution, verified against an unsplit reference."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/Aitherium/awswarm"
+Repository = "https://github.com/Aitherium/awswarm.git"
+
+[tool.setuptools]
+packages = ["awswarm"]
+license-files = ["LICENSE"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
