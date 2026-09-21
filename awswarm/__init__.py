@@ -44,7 +44,7 @@ pools violate; every probability here is a ceiling, never a floor. See docs/ROAD
 for the eight gates and an honest status on each.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.1.0"
 
 from awswarm.acquire import (
     AssemblyReport,
