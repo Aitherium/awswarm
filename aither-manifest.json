@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "name": "awswarm",
+  "description": "Run one model too big for any single GPU across a pool of small ones.",
+  "url": "https://aitherium.github.io/awswarm/",
+  "repository": "https://github.com/Aitherium/awswarm",
+  "kind": "tool",
+  "status": "no-pages",
+  "adopt": "Feed it one layer's shape and a pool of heterogeneous GPU specs and get back a sub-layer placement plan, plus the probability that plan actually assembles.",
+  "pairs_with": [
+    "awnet",
+    "awrun",
+    "awdk"
+  ],
+  "includes": [],
+  "metrics": {
+    "files": {
+      "value": 29,
+      "as_of": "2026-09-22T16:54:52+00:00"
+    },
+    "tests": {
+      "value": 9,
+      "as_of": "2026-09-22T16:54:52+00:00"
+    }
+  }
+}
