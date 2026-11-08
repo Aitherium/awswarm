@@ -1,0 +1,29 @@
+# awswarm
+
+> Run one model too big for any single GPU across a pool of small ones.
+
+A frontier MoE checkpoint (Kimi K3, ~1.56TB) fits no consumer card, and "rent a bigger box" stops being an option past a certain size. Splitting a model finely enough to run on heterogeneous, unreliable consumer GPUs -- some too small to hold even one full layer -- is a placement and scheduling problem with no shipped general answer. The money-losing failure mode is retrying a fleet acquisition that was never going to complete, because nothing scored the odds before spending on it.
+
+## Install
+
+```
+pip install awswarm
+```
+
+## Use it in 30 seconds
+
+Feed it one layer's shape and a pool of heterogeneous GPU specs and get back a sub-layer placement plan, plus the probability that plan actually assembles.
+
+## Composes with
+
+- [awnet](https://aitherium.github.io/awnet/) — The agentic web — agents host a mesh, and agents join one.
+- [awrun](https://aitherium.github.io/awrun/) — A priority-aware queue and dispatcher for agentic runs and ad-hoc CI builds. It also judges whether the runner pool is big enough for the queue it is draining, and can ask a host to grow it -- reserving capacity is zero-sum, so a saturated pool needs more of it, not a different share of it.
+- [awdk](https://aitherium.github.io/awdk/) — Build AI agent fleets — 3 lines, any backend, local or cloud.
+
+## Where it lives
+
+- Repo: https://github.com/Aitherium/awswarm
+
+This repository is mirrored from the AitherOS monorepo by `.github/workflows/sync-awswarm.yml`; hand edits made here are overwritten on the next sync — change the source instead.
+
+Everything Aitherium, in one file for agents: https://aitherium.com/llms.txt
