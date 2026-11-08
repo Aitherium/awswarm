@@ -23,6 +23,8 @@ Feed it one layer's shape and a pool of heterogeneous GPU specs and get back a s
 ## Where it lives
 
 - Repo: https://github.com/Aitherium/awswarm
+- Docs: https://aitherium.github.io/awswarm/
+- Manifest (keys + the one-line adoption story): https://aitherium.github.io/awswarm/aither-manifest.json
 
 This repository is mirrored from the AitherOS monorepo by `.github/workflows/sync-awswarm.yml`; hand edits made here are overwritten on the next sync — change the source instead.
 
